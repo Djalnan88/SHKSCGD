@@ -28,6 +28,8 @@ Partial Class Form6
         PictureBox3 = New PictureBox()
         Label1 = New Label()
         Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -81,12 +83,32 @@ Partial Class Form6
         Button1.Text = "확인"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(507, 238)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 29)
+        Button2.TabIndex = 6
+        Button2.Text = "공부"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(507, 273)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 29)
+        Button3.TabIndex = 7
+        Button3.Text = "식사"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Form6
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         ControlBox = False
+        Controls.Add(Button3)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label1)
         Controls.Add(PictureBox3)
@@ -105,4 +127,6 @@ Partial Class Form6
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
