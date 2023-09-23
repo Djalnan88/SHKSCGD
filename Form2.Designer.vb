@@ -25,32 +25,69 @@ Partial Class Form2
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form2))
         Panel1 = New Panel()
+        PictureBox4 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
         Button8 = New Button()
-        Button4 = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
-        Button1 = New Button()
         PictureBox1 = New PictureBox()
         Button5 = New Button()
         Button6 = New Button()
         Button7 = New Button()
         Timer1 = New Timer(components)
+        PictureBox5 = New PictureBox()
         Panel1.SuspendLayout()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(PictureBox5)
+        Panel1.Controls.Add(PictureBox4)
+        Panel1.Controls.Add(PictureBox3)
+        Panel1.Controls.Add(PictureBox2)
         Panel1.Controls.Add(Button8)
-        Panel1.Controls.Add(Button4)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button1)
         Panel1.Dock = DockStyle.Bottom
         Panel1.Location = New Point(0, 423)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(757, 125)
         Panel1.TabIndex = 0
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Dock = DockStyle.Left
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(250, 0)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(125, 125)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 7
+        PictureBox4.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Dock = DockStyle.Left
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(125, 0)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(125, 125)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 6
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Dock = DockStyle.Left
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(0, 0)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(125, 125)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 5
+        PictureBox2.TabStop = False
         ' 
         ' Button8
         ' 
@@ -61,46 +98,6 @@ Partial Class Form2
         Button8.TabIndex = 4
         Button8.Text = "종료"
         Button8.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.Dock = DockStyle.Left
-        Button4.Location = New Point(282, 0)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(94, 125)
-        Button4.TabIndex = 3
-        Button4.Text = "랜덤추천"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.Dock = DockStyle.Left
-        Button3.Location = New Point(188, 0)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 125)
-        Button3.TabIndex = 2
-        Button3.Text = "선호설정"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.Dock = DockStyle.Left
-        Button2.Location = New Point(94, 0)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 125)
-        Button2.TabIndex = 1
-        Button2.Text = "한눈에보기"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Dock = DockStyle.Left
-        Button1.Location = New Point(0, 0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 125)
-        Button1.TabIndex = 0
-        Button1.Text = "공부할곳"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' PictureBox1
         ' 
@@ -145,6 +142,17 @@ Partial Class Form2
         ' 
         Timer1.Interval = 5000
         ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Dock = DockStyle.Left
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Location = New Point(375, 0)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(125, 125)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 8
+        PictureBox5.TabStop = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
@@ -159,19 +167,23 @@ Partial Class Form2
         Name = "Form2"
         Text = "main"
         Panel1.ResumeLayout(False)
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
 End Class

@@ -60,26 +60,6 @@ Public Class Form2
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form5.Show()
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form4.Show()
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Form3.Show()
-
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form6.Show()
-
-    End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Me.Hide()
         Form7.Show()
@@ -125,6 +105,26 @@ Public Class Form2
         book_dorm += rd.Next(-1 * min(book_dorm, 5), min(book_dorm_max - book_dorm, 5))
         book_E7 += rd.Next(-1 * min(book_E7, 5), min(book_E7_max - book_E7, 5))
         book_sun += rd.Next(-1 * min(book_sun, 5), min(book_sun_max - book_sun, 5))
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Form5.Show()
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Form4.Show()
+
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Form3.Show()
+
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Form6.Show()
 
     End Sub
 End Class
