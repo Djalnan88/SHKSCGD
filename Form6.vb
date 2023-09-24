@@ -31,6 +31,6 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Label1.Text = lunch_place(rd.Next(1, 3))
+        Label1.Text = lunch_place(rd.Next(1, 4))
     End Sub
 End Class
